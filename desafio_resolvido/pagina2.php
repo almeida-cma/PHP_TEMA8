@@ -3,6 +3,12 @@ session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 //código aqui
+    $_SESSION["nome2"] = $_POST["nome"];
+    $_SESSION["idade2"] = $_POST["idade"];
+    $_SESSION["peso2"] = $_POST["peso"];
+    $_SESSION["altura2"] = $_POST["altura"];
+    header("Location: pagina3.php");
+    exit;
 }
 ?>
 
